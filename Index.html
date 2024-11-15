@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Company Sales Directory</h1>
+    <div class="directory">
+        <div class="person" onclick="showDetails('abdul-sathar')">
+            Abdul Sathar - BTF - Manager
+        </div>
+        <div class="person" onclick="showDetails('ahmed-abu-moghli')">
+            Ahmed Abu-Moghli - BTD - Manager
+        </div>
+        <div class="person" onclick="showDetails('muhammed-bilal')">
+            Muhammed Bilal - BTD - Salesperson
+        </div>
+        <!-- Add more as needed -->
+    </div>
+    <div id="details" class="details hidden">
+        <button onclick="closeDetails()">Close</button>
+        <h2 id="details-name"></h2>
+        <p><strong>Position:</strong> <span id="details-position"></span></p>
+        <p><strong>Email:</strong> <span id="details-email"></span></p>
+        <p><strong>Mobile:</strong> <span id="details-mobile"></span></p>
+        <p><strong>Branch:</strong> <span id="details-branch"></span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
